@@ -7,7 +7,7 @@ import {
 } from "../../../dal/entity/notfication.entity";
 import bcrypt from "bcrypt";
 import { Gender } from "../../../dal/enums/genderEnum";
-import io, { getReceiverSocketId } from "../../../socket/socket";
+import { io, getReceiverSocketId } from "../../../socket/socket";
 
 const getProfile = async (req: Request, res: Response, next: NextFunction) => {
   try {

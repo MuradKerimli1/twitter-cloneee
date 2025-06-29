@@ -4,7 +4,7 @@ import { Conversation } from "../../../dal/entity/conversation.entity";
 import { User } from "../../../dal/entity/user.entity";
 import { Message } from "../../../dal/entity/message.entity";
 import { AppDataSource } from "../../../dal/db/mysql";
-import io, { getReceiverSocketId } from "../../../socket/socket";
+import { io, getReceiverSocketId } from "../../../socket/socket";
 
 const sendMessage = async (req: Request, res: Response, next: NextFunction) => {
   try {

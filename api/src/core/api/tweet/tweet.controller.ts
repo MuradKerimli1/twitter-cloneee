@@ -7,7 +7,7 @@ import {
   NotificationType,
 } from "../../../dal/entity/notfication.entity";
 import { Comment } from "../../../dal/entity/comment.entity";
-import io, { getReceiverSocketId } from "../../../socket/socket";
+import { io, getReceiverSocketId } from "../../../socket/socket";
 
 const createTweet = async (req: Request, res: Response, next: NextFunction) => {
   try {

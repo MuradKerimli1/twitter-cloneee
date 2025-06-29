@@ -1,7 +1,7 @@
 import cron from "node-cron";
 import { User } from "../../dal/entity/user.entity";
 import { LessThan } from "typeorm";
-import io, { getReceiverSocketId } from "../../socket/socket";
+import { io, getReceiverSocketId } from "../../socket/socket";
 
 export const startViewerCleanupJob = () => {
   cron.schedule("0 0 1 * *", async () => {

@@ -122,7 +122,7 @@ const Login = () => {
 
           {/* Link register */}
           <p className="text-sm font-bold mt-2 text-center">
-            Zaten hesabin varmi?{" "}
+            Kayit ol!{" "}
             <Link
               to="/auth/register"
               className="text-[#1B92E2] hover:underline ml-2"

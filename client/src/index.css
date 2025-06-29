@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+  themes: light --default;
+}
+
+* {
+  font-family: "Winky Sans", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+@media (min-width: 1200px) {
+  .show-1100 {
+    display: block !important;
+  }
+}
+.show-at-992 {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .show-at-992 {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .conversations-at-992 {
+    max-width: 400px;
+  }
+}

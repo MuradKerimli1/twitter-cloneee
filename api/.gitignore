@@ -1,0 +1,20 @@
+# Node.js modulları
+node_modules/
+
+# Derlenmiş TypeScript çıxışları
+dist/
+
+# Ortam dəyişənləri
+.env
+
+# Log faylları
+logs/
+*.log
+
+# IDE və sistem faylları
+.vscode/
+.DS_Store
+Thumbs.db
+
+# NPM və ya Yarn lock faylları varsa və yalnız biri istifadə olunursa digərini əlavə et
+# yarn.lock

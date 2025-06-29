@@ -57,7 +57,7 @@ const Register = () => {
     }
   };
   return (
-    <section className="w-full  bg-black flex items-center justify-center" style={{ height: "calc(100vh - 100px)" }}>
+    <section className="w-full  bg-black flex items-center justify-center h-screen" >
       <div className="max-w-xl w-full text-white flex flex-col gap-5 p-4 rounded-md shadow-lg">
         <BsTwitterX size={40} />
         <div className="flex items-center justify-center">

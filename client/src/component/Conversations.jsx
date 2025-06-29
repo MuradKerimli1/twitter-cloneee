@@ -56,7 +56,7 @@ const Conversations = ({ setActiveView }) => {
 
   return (
     <>
-      <div className="flex flex-col border-r border-[#2F3336] h-screen overflow-y-auto p-3 w-full conversations-at-992">
+      <div className="flex flex-col border-r border-[#2F3336]  overflow-y-auto p-3 w-full conversations-at-992" style={{ height: "calc(100vh - 100px)" }}>
         {/* Header */}
         <div className="w-full flex items-center justify-between gap-1">
           <p className="font-semibold text-xl">Mesajlar</p>

@@ -1,3 +1,4 @@
+// main.ts (və ya server.ts)
 import "dotenv/config";
 import express, { NextFunction, Request, Response } from "express";
 import http from "http";
@@ -13,11 +14,11 @@ import {
 
 const app = express();
 const server = http.createServer(app);
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 AppDataSource.initialize()
   .then(() => {
-    console.log("mysql connected");
+    console.log("✅ MySQL bağlantısı quruldu");
 
     initializeSocket(server);
 
@@ -38,15 +39,15 @@ AppDataSource.initialize()
 
     app.use((err: any, req: Request, res: Response, next: NextFunction) => {
       res.status(err.status || 500).json({
-        message: err.message || "internal server error",
+        message: err.message || "Internal server error",
       });
     });
 
     server.listen(port, () => {
-      console.log(`server running port - ${port}`);
+      console.log(`🚀 Server port ${port}-da işə düşdü`);
     });
   })
   .catch((err) => {
-    console.log(err);
+    console.error("❌ MySQL bağlantı xətası:", err);
     process.exit(1);
   });

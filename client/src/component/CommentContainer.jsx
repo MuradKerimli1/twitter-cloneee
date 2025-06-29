@@ -30,7 +30,7 @@ const CommentContainer = ({ close }) => {
   };
 
   return (
-    <section className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm">
+    <section className="fixed inset-0 z-50000 bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm">
       <div className="bg-[#16181c] w-full max-w-xl p-4 rounded-2xl border border-gray-800 shadow-xl">
         {/* Close icon */}
         <div className="flex justify-end">
